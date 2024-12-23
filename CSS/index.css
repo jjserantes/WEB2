@@ -28,11 +28,35 @@ nav ul li a{
     text-decoration: none;
 }
 
-.seccion1 {
-    background-image: url("../Imagenes/aprender-html.png");
+/*.seccion1 {
+    /*background-image: url("../Imagenes/aprender-html.png");
     background-size: cover;
     background-position: center;
-}
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;*/
+    .seccion1 {
+        position: relative;
+        display: flex; 
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .seccion1::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../Imagenes/aprender-html.png");
+        background-size: cover;
+        background-position: center;
+        opacity: 0.5; /* Ajusta el valor de opacidad según tus necesidades */
+        z-index: -1; /* Coloca la imagen detrás del contenido */
+    }
+    
+
 
 /* Media queries para hacer la web responsive */
 @media (max-width: 768px) {
