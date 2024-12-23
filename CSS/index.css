@@ -28,6 +28,12 @@ nav ul li a{
     text-decoration: none;
 }
 
+.seccion1 {
+    background-image: url("../Imagenes/aprender-html.png");
+    background-size: cover;
+    background-position: center;
+}
+
 /* Media queries para hacer la web responsive */
 @media (max-width: 768px) {
     header h1{
