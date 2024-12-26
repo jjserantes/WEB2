@@ -122,7 +122,11 @@ form p {
     margin-top: 10px;
     text-align: center;
 }
-
+#msg{
+    font-size:15px;
+    color:red;
+    display: none;
+}
 /* Media queries para hacer la web responsive */
 @media (max-width: 768px) {
     header h1 {

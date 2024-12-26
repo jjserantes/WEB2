@@ -122,6 +122,16 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+section p{
+    display: none;
+  }
+section h3:hover +p{
+    display: block;
+} 
+
+
+
 /* Media queries para hacer la web responsive */
 @media (max-width: 768px) {
     header h1{
