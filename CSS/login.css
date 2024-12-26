@@ -1,0 +1,57 @@
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background: #333;
+    color: #fff;
+}
+nav {
+    height: 50px;
+    background: #818181;
+    color: #fff;
+    display: flex;
+    justify-content: right;
+}
+nav ul li a { 
+    text-decoration: none; 
+    color: inherit; /* Hereda el color del elemento padre */
+}    
+section{
+    height: 500px;
+}
+footer{
+    height: 100px;
+}
+nav ul{
+    display: flex;
+   /* justify-content: right;*/
+    list-style-type: none;
+}
+nav ul li{
+    margin-right: 20px;
+    font-size: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+/* Media queries para hacer la web responsive */
+@media (max-width: 768px) {
+    header h1{
+        display: none;
+    }
+    header{
+        justify-content: space-around;
+    }
+    nav ul {
+        justify-content: center;
+    }
+    
+}
+
