@@ -5,39 +5,48 @@ header {
     height: 100px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background: #333;
     color: #fff;
+    padding: 0 20px;
+}
+
+header img {
+    height: 80px;
+}
+
+header h1 {
+    margin: 0;
 }
 nav {
     height: 50px;
     background: #818181;
     color: #fff;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
 }
-nav ul li a { 
-    text-decoration: none; 
-    color: inherit; /* Hereda el color del elemento padre */
-}    
-section{
-    height: 500px;
-}
-footer{
-    height: 100px;
-}
-nav ul{
+
+nav ul {
     display: flex;
-   /* justify-content: right;*/
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
-nav ul li{
+
+nav ul li {
     margin-right: 20px;
     font-size: 20px;
 }
-nav ul li a{
-    text-decoration: none;
-}
 
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+section{
+    height: 500px;
+}
 .seccion1, .seccion2, .seccion3, .seccion4 {
         position: relative;
         display: flex; 
