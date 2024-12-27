@@ -1,0 +1,22 @@
+*{
+    border: 1px solid black
+}
+header {
+    height: 100px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.imgUser {
+    height: 80px;
+    border-radius: 50%;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
