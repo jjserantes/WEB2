@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/contacto.css">
+</head>
+<body>    
+    <header>
+        <img src="Imagenes/images.jfif" alt="logoweb">
+        <h1>Google Classroom</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul> 
+    </nav>    
+    <div id="contenedor">
+        <div id="info">
+            <h2>FORMACOM</h2>
+            <p>¡Estamos aqui!.</p>
+            <img src="Imagenes/cropped-ubicacion-formacom-vigo-768x638.png" alt="Formacom">
+        </div>
+        <div id="hola">
+            <form class="register" action="" method="get">
+                <label for="Nombre">Nombre</label>
+                <input required type="text" name="nombre" id="Nombre">
+                
+                <label for="Email">Correo electrónico</label>
+                <input required type="email" name="email" id="Email">
+                
+                <label for="Comentario">Comentario</label>
+                <textarea required name="comentario" id="Comentario"></textarea>
+                
+                <div class="checkbox-container">
+                    <input type="checkbox" id="CheckHola" name="check_hola">
+                    <label for="CheckHola" class="small-text">Das tu consentimiento para vender tus datos</label>
+                </div>
+                
+                <button id="btnCrear" disabled>Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/contacto.js"></script>
+    <footer>
+        <p>FORMACOM &copy; 2024</p>
+    </footer>
+</body>
+</html>

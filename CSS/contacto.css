@@ -1,0 +1,182 @@
+/* Estilos para el header */
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: #fff;
+    padding: 0 20px;
+}
+
+header img {
+    height: 80px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Estilos para la navegación */
+nav {
+    height: 50px;
+    background: #818181;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Estilos para el footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos para el contenido principal */
+#contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: calc(100vh - 160px); /* Ajusta la altura para incluir header y footer */
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+#info {
+    flex: 1;
+    margin-right: 15px; /* Ajusta el margen para separar adecuadamente el contenido */
+    max-width: 300px; /* Ajusta el ancho según tus necesidades */
+}
+
+#info img {
+    width: 100%; /* Ajusta la imagen para que tome el ancho completo de su contenedor */
+    border-radius: 5px;
+    margin-bottom: 10px; /* Añade espacio debajo de la imagen */
+}
+
+form {
+    flex: 2;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #cc00ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:disabled { 
+    background-color: #e0e0e0; 
+    cursor: not-allowed;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-container label {
+    font-size: 10px; /* Ajusta el tamaño de la fuente según tus necesidades */
+}
+
+#hola {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#info {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Media queries para hacer la web responsive */
+@media (max-width: 768px) {
+    header h1 {
+        display: none;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    #contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #info {
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #info img {
+        width: 100px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    form button {
+        font-size: 14px;
+    }
+}
+
