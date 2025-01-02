@@ -56,10 +56,36 @@ footer {
 
 aside {
     background-color: #f9f9f9;
-    padding: 10px;
-    border-left: 4px solid #007BFF;
+    padding: 5px;
     margin-top: 20px;
-    width: 10%
+    width: 30%;
+}
+
+.asidemovil {
+    display: none;
+}
+
+aside li {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside i {
+    margin-right: 20px;
+    width: 30px;
+}
+
+.contenedorPrincipal {
+    width: 70%;
+}
+
+main {
+    display: flex;
+    height: 70vh;
 }
 
 /* Media queries */
@@ -82,12 +108,50 @@ aside {
     .user-menu ul li {
         padding: 8px;
     }
-    
+
     aside {
+        display: none;
         border-left: none;
         border-top: 4px solid #007BFF;
         margin-top: 10px;
         width: 100%;
         box-sizing: border-box;
     }
+
+    .contenedorPrincipal {
+        width: 100%;
+    }
+
+    .asidemovil {
+        display: block;
+    }
+
+    main {
+        flex-direction: column;
+    }
 }
+
+.asidemovil ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.asidemovil ul li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+
+.asidemovil ul li img,
+.asidemovil ul li i {
+    width: 20px;  /* Ajusta el tamaño según sea necesario */
+    height: 20px; /* Ajusta el tamaño según sea necesario */
+    object-fit: cover;
+}
+
+.asidemovil ul li img {
+    margin-right: 10px;
+}
+
