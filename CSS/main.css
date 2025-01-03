@@ -155,3 +155,84 @@ main {
     margin-right: 10px;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+table thead th {
+    background-color: #009879;
+    color: #ffffff;
+    padding: 10px;
+}
+
+table tbody td {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+table td i {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+table td i.fa-trash {
+    color: #e74c3c;
+}
+
+table td i.fa-edit {
+    color: #3498db;
+}
+
+.incidencias {
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.incidencias form {
+    display: flex;
+    flex-direction: column;
+}
+
+.incidencias label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.incidencias input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.incidencias button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.incidencias button:hover {
+    background-color: #45a049;
+}
