@@ -81,11 +81,12 @@ aside i {
 
 .contenedorPrincipal {
     width: 70%;
+    overflow: auto;
 }
 
 main {
     display: flex;
-    height: 70vh;
+    height: 75vh;
 }
 
 /* Media queries */
@@ -120,6 +121,7 @@ main {
 
     .contenedorPrincipal {
         width: 100%;
+        overflow: auto;
     }
 
     .asidemovil {
