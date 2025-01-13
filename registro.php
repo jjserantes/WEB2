@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -13,15 +15,15 @@
     </header>
     <nav>
         <ul>
-            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.php">Inicio</a></li>
             <li><a href="login.html">Login</a></li>
-            <li><a href="registro.html">Registro</a></li>
-            <li> <a href="contacto.html">Contacto</a></li>
+            <li><a href="registro.php">Registro</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
         </ul> 
     </nav>    
     <div id="hola">
         <img src="Imagenes/images2.jfif" alt="logoweb">
-        <form class="register" action="" method="get">
+        <form class="register" action="procesarformulario.php" method="post">
             <label for="Nombre">Nombre</label>
             <input required type="text" name="nombre" id="Nombre">
             <label for="Apellidos">Apellidos</label>
@@ -36,7 +38,6 @@
             <input type="password" name="repassword" id="repassword">
             <span id="msg">*Las Contraseñas deben de ser iguales</span>
             <button id="btnCrear"disabled>Crear usuario</button>
-        
         </form>
         <p>*Si ya dispones de usuario <a href="login.html">Entrar aquí</a></p>
     </div>

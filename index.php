@@ -13,13 +13,13 @@
     </header>
      <nav>
      <ul>
-     <li> <a href="index.html">Inicio</a></li>
+     <li> <a href="index.php">Inicio</a></li>
      <li> <a href="login.html">Login</a></li>
-     <li> <a href="registro.html">Registro</a></li>
+     <li> <a href="registro.php">Registro</a></li>
      <li> <a href="contacto.html">Contacto</a></li>
      </ul> 
     </nav>
-    
+   
     <section class="seccion1"> 
         <h3>Aprende HTML</h3>  
         <p>HTML, que significa HyperText Markup Language (Lenguaje de Marcado de Hipertexto), es el lenguaje estándar que se utiliza para crear páginas web. Piensa en HTML como los bloques de construcción de una página web </p>   
