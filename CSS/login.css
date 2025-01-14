@@ -16,6 +16,7 @@ header img {
 
 header h1 {
     margin: 0;
+    font-size: 24px; /* Ajustar el tamaño de fuente */
 }
 
 /* Estilos para la navegación */
@@ -44,6 +45,11 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: inherit;
+    transition: color 0.3s; /* Añadir transición */
+}
+
+nav ul li a:hover {
+    color: #ddd; /* Cambiar color al pasar el ratón */
 }
 
 /* Estilos para el footer */
@@ -52,6 +58,9 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Estilos para el contenido principal */
@@ -60,7 +69,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 160px); /* Ajusta la altura para incluir header y footer */
+    min-height: calc(100vh - 160px); /* Ajusta la altura para incluir header y footer */
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
     padding: 20px;
@@ -88,7 +97,7 @@ form label {
     font-weight: bold;
 }
 
-form input[type="text"],
+form input[type="email"],
 form input[type="password"] {
     width: 100%;
     padding: 10px;
@@ -107,6 +116,7 @@ form button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 0.3s; /* Añadir transición */
 }
 
 form button:hover {
@@ -139,4 +149,3 @@ form p {
         font-size: 14px;
     }
 }
-

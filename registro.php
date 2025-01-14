@@ -1,4 +1,31 @@
 
+<?php
+if(isset($_POST["nombre"])){
+    include("conexiondlb.php");
+    try {
+        // Preparar y ejecutar la consulta SQL
+        $sql = "INSERT INTO usuarios (nombre, apellidos, email, fecha, password) 
+                VALUES (:nombre, :apellidos, :email, :fecha, :password)";
+        $stmt = $conexion->prepare($sql);
+        $stmt->bindParam(':nombre', $_POST["nombre"]);
+        $stmt->bindParam(':apellidos', $_POST["apellidos"]);
+        $stmt->bindParam(':email', $_POST["email"]);
+        $stmt->bindParam(':fecha', $_POST["fecha"]);
+        // Encriptar la contraseña antes de guardarla
+        $hashed_password = password_hash($_POST["password"], PASSWORD_DEFAULT);
+        $stmt->bindParam(':password', $hashed_password);
+        //$stmt->bindParam(':password', $_POST["password"]);
+        $stmt->execute();
+    
+        echo "Registro insertado exitosamente";
+    
+        // Redirigir a la página de login   
+        header("Location: login.php");
+    } catch (PDOException $e) {
+        echo "Conexión fallida: " . $e->getMessage();
+    }
+ }
+?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -16,14 +43,14 @@
     <nav>
         <ul>
             <li><a href="index.php">Inicio</a></li>
-            <li><a href="login.html">Login</a></li>
+            <li><a href="login.php">Login</a></li>
             <li><a href="registro.php">Registro</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul> 
     </nav>    
     <div id="hola">
         <img src="Imagenes/images2.jfif" alt="logoweb">
-        <form class="register" action="procesarformulario.php" method="post">
+        <form class="register" action="" method="post">
             <label for="Nombre">Nombre</label>
             <input required type="text" name="nombre" id="Nombre">
             <label for="Apellidos">Apellidos</label>
@@ -39,7 +66,7 @@
             <span id="msg">*Las Contraseñas deben de ser iguales</span>
             <button id="btnCrear"disabled>Crear usuario</button>
         </form>
-        <p>*Si ya dispones de usuario <a href="login.html">Entrar aquí</a></p>
+        <p>*Si ya dispones de usuario <a href="login.php">Entrar aquí</a></p>
     </div>
     <script src="js/registro.js"></script>
     <footer>
